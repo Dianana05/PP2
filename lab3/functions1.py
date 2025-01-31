@@ -6,3 +6,4 @@ def temp(f):
 f=int(input())
 celci=temp(f)
 print("celci",celci)
+#3
