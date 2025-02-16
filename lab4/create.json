@@ -1,0 +1,7 @@
+{
+    "students":[
+        {"name":"Alice", "age": 22, "city":"New York"},
+        {"name":"Bob", "age": 24, "city":"Los Ageles"},
+        {"name":"Charlie", "age": 23, "city":"Chicago"}
+    ]
+}
