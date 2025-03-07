@@ -1,0 +1,3 @@
+Hello, this is source file.
+It contains some text.
+Python is fun!
