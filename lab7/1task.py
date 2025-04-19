@@ -1,3 +1,4 @@
+
 import pygame
 import time
 
@@ -20,13 +21,16 @@ while running:
             running = False
 
     now = time.localtime()
-    minute_angle = -now.tm_min * 6
-    second_angle = -now.tm_sec * 6
+    minute_angle = -(now.tm_min * 6)
+    second_angle = -(now.tm_sec * 6)
+
+    screen.fill((0,0,0))
 
     screen.blit(background, (0, 0))
 
-    min_rotated = pygame.transform.rotate(minute_hand, minute_angle)
+    min_rotated = pygame.transform.rotate(minute_hand, minute_angle) 
     sec_rotated = pygame.transform.rotate(second_hand, second_angle)
+
 
     screen.blit(min_rotated, min_rotated.get_rect(center=center).topleft)
     screen.blit(sec_rotated, sec_rotated.get_rect(center=center).topleft)

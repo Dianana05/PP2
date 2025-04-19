@@ -1,0 +1,10 @@
+{
+    "name": "Maria",
+    "age": 21,
+    "courses": [
+        "Python",
+        "Math",
+        "Data Science"
+    ],
+    "is_graduated": false
+}

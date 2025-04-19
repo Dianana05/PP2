@@ -148,7 +148,7 @@ while True:
 
     if pygame.sprite.spritecollideany(P1, enemies):
         pygame.mixer.Sound('crash.wav').play()
-        time.sleep(0.5)
+        time.sleep(5)
         DISPLAYSURF.fill(RED)
         DISPLAYSURF.blit(game_over, (30,250))
         pygame.display.update()

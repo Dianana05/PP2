@@ -51,9 +51,10 @@ class Enemy(pygame.sprite.Sprite): # enemy class
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("Player.png")
+        self.image = pygame.image.load("Enemy.png")
         self.rect = self.image.get_rect()
-        self.rect.center = (160, 520) # player in this position 
+        self.rect.center = (160, 520)
+     # player in this position 
         
     def move(self):
         pressed_keys = pygame.key.get_pressed()
@@ -147,6 +148,9 @@ while True:
         # draw coin
 
     if pygame.sprite.spritecollideany(P1, enemies):
+        DISPLAYSURF.blit(entity.image, entity.rect)
+        entity.move()
+        
         pygame.mixer.Sound('crash.wav').play()
         time.sleep(0.5)
         DISPLAYSURF.fill(RED)
